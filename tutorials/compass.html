@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../stylesheets/creative.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <title>Compass</title>
+
+    <style media="screen">
+
+    p {margin:0; padding:0; text-align: justify;}
+
+
+    </style>
+
+    </head>
+
+
+  <body>
+    <div class="wrapper-tuts">
+    <a href="top:" id="return-to-top"></a>
+    <a class="home-picture" href="../index.html"><img src="../img/home.png" alt="Home"></a>
+  <h1>COMPASS</h1>
+  <h3>Install</h3>
+  <p>Compass needs ruby to be installed, then start gem and install compass</p>
+  <pre>gem install compass</pre>
+  <p>To create new project and install compass</p>
+  <pre>compass create new_project</pre>
+  <p>To add compass to existing directory, navigate to parrent directory and run</p>
+  <pre>compass install compass</pre>
+  <p>In header we need to add some lines</p>
+<pre>
+&ltlink href="/stylesheets/screen.css" media="screen, projection"
+ rel="stylesheet" type="text/css" /&gt
+&ltlink href="/stylesheets/print.css" media="print"
+rel="stylesheet" type="text/css" /&gt
+&lt!--[if IE]&gt
+&ltlink href="/stylesheets/ie.css" media="screen, projection"
+rel="stylesheet" type="text/css" /&gt
+&lt![endif]--&gt</pre>
+<p>.scss files are stored in sass folder and .css files are in stylesheets folder</p>
+<p>We need to change path to css folder</p>
+<pre>
+&ltlink rel="stylesheet" type="text/css" href="stylesheets/style.css"&gt</pre>
+<p>To compile your .scss to .css run</p>
+<pre>
+compass watch
+</pre>
+<p>In .scss file we must to add</p>
+<pre>@import 'compass';</pre>
+<br>
+    <div class="footer-tuts">
+    | <a href="http://compass-style.org/examples/">Reference</a> |
+    | <a href="https://www.youtube.com/playlist?list=PL45DD77A4CCA76ED3" target="_blank"><img class="icons" src="../img/youtube.png" alt="youtube" /></a> |
+  </div>
+
+</div>
+  </body>
+  <script src="../js/scroll.js"></script>
+</html>

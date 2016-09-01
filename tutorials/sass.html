@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/creative.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <title>SASS</title>
+
+    <style media="screen">
+      p {margin:0; padding:0; text-align: justify;}
+    </style>
+
+  </head>
+
+
+<body>
+  <div class="wrapper-tuts">
+    <a href="top:" id="return-to-top"></a>
+    <a class="home-picture" href="../index.html"><img src="../img/home.png" alt="Home"></a>
+    <h1>SASS - Syntactically Awesome StyleSheets</h1>
+    <h3>Install and use SASS</h3>
+    <pre>gem install sass</pre>
+    <p>To run Sass</p>
+    <pre>sass input.scss output.css</pre>
+    <p>Tell Sass to watch and update file automaticly</p>
+    <pre>sass --watch input.scss:output.css</pre>
+    <h3>Variables</h3>
+    <p>Sass uses $ to make a variable</p>
+  <pre>
+$font-stack: Arial, sans-serif;
+$bg-color: #206bcf;
+
+p {
+  font: $font-stack;
+  color: $bg-color;
+  }</pre>
+
+<h3>Nesting</h3>
+<p>Sass let nest CSS selectors in the same way as HTML. The inner rule then only applies within the outer rule’s selector.</p>
+<p>SCSS syntax</p>
+<pre>
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {display: inline-block;}
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+</pre>
+<p>CSS syntax</p>
+<pre>
+  nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+</pre>
+<p>Referencing Parent Selectors: &</p>
+<p>Sometimes it’s useful to use a nested rule’s parent selector in other ways than the default. For instance, you might want to have special styles for when that selector is hovered over or for when the body element has a certain class. In these cases, you can explicitly specify where the parent selector should be inserted using the & character.</p>
+
+<h3>Caching</h3>
+<p>By default, Sass caches compiled templates and partials. This dramatically speeds up re-compilation of large collections of Sass files, and works best if the Sass templates are split up into separate files that are all @imported into one large file.</p>
+
+<h3>Partials</h3>
+<p>We can create partial Sass file that contain little snippets of CSS that we can include in other Sass file.</p>
+<p>We can modularize our css and keep easier to maintain</p>
+<p>Partials name start with leading underscore</p>
+<pre>_partial.scss</pre>
+
+<h3>Import</h3>
+<p>CSS has an import option that lets you split your CSS into smaller, more maintainable portions.</p>
+<p>With import we dont use leading underscore.</p>
+<pre>
+// _reset.scss
+
+html,
+body,
+ul,
+ol {
+   margin: 0;
+   padding: 0;
+}
+</pre>
+<pre>
+// base.scss
+
+@import 'reset';
+
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+}
+</pre>
+<p>CSS will look</p>
+<pre>
+html, body, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 100% Helvetica, sans-serif;
+  background-color: #efefef;
+}
+</pre>
+
+<h3>Mixins</h3>
+<p>A mixin lets you make groups of CSS declarations that you want to reuse throughout your site.</p>
+<p>We can even pass in values to make your mixin more flexible.</p>
+<pre>
+@mixin border-radius($radius) {
+-webkit-border-radius: $radius;
+   -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+        border-radius: $radius;
+}
+
+.box {@include border-radius(10px);}
+</pre>
+<p>To create a mixin you use the @mixin directive and give it a name.</p>
+<p>We're also using the variable $radius inside the parentheses so we can pass in a radius of whatever we want. After you create your mixin, you can then use it as a CSS declaration starting with @include followed by the name of the mixin. </p>
+<pre>
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  }
+</pre>
+<h3>Extend/Inheritance</h3>
+<p>This is one of the most useful features of Sass. Using @extend lets you share a set of CSS properties from one selector to another. It helps keep your Sass very DRY.</p>
+<pre>
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+.success {
+  @extend .message;
+  border-color: green;
+}
+.error {
+  @extend .message;
+  border-color: red;
+}
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
+</pre>
+<p>The magic happens with the generated CSS, and this helps you avoid having to write multiple class names on HTML elements. This is what it looks like:</p>
+<pre>
+.message, .success, .error, .warning{
+  border: 1px solid #cccccc;
+  padding: 10px;
+  color: #333;
+}
+.success {
+  border-color: green;
+}
+.error {
+  border-color: red;
+}
+.warning {
+  border-color: yellow;
+}</pre>
+
+<h3>Operators</h3>
+<p>Doing math in your CSS is very helpful. Sass has a handful of standard math operators like +, -, *, /, and %.</p>
+<pre>
+.container { width: 100%; }
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+  }
+</pre>
+<p>CSS will look</p>
+<pre>
+.container {
+  width: 100%;
+}
+
+article[role="main"] {
+  float: left;
+  width: 62.5%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 31.25%;
+}
+</pre>
+
+<br>
+  <div class="footer-tuts">
+    | <a href="http://sass-lang.com/guide" target="_blank">Basic</a> |
+    <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html" target="_blank">Reference</a> |
+    <a href="https://www.youtube.com/playlist?list=PL2CB1F80266E986EA" target="_blank"><img class="icons" src="../img/youtube.png" alt="youtube" /></a> |
+  </div>
+
+</div>
+  </body>
+  <script src="../js/scroll.js"></script>
+</html>

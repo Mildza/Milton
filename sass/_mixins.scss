@@ -1,4 +1,17 @@
 // Mixins
+@function px2em($size-in-px, $base-size:$default-font-size) {
+  @return ($size-in-px/$base-size) + em;
+}
+@function px2rem($size-in-px) {
+  @return ($size-in-px/$default-font-size) + rem;
+}
+
+@mixin border-radius ($radius) {
+  -webkit-border-radius: $radius;
+   -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+        border-radius: $radius;
+}
 
 @mixin transition-all() {
     -webkit-transition: all 0.35s;
