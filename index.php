@@ -1,3 +1,9 @@
+<?php
+  session_start();
+  $_SESSION['message'] = '';
+  //print_r($_POST);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -225,28 +231,7 @@
     <section class="bg-primary" id="contactform">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
-                    <h2 class="section-heading">Quick message</h2>
-                    <hr class="primary">
-                    <p>Drop us a quick note about your project. We’ll get in touch shortly to discuss your ideas and your visions.</p>
-                </div>
-				<form>
-                <div class="col-sm-5 col-md-4 col-sm-offset-1 col-md-offset-2 text-center">
-				  <div class="form-group">
-					<input type="email" class="form-control" id="email" placeholder="Email">
-				  </div>
-				  <div class="form-group">
-					<input type="text" class="form-control" id="subject" placeholder="Subject">
-				  </div>
-                </div>
-                <div class="col-sm-5 col-md-4 text-center">
-				  <div class="form-group">
-					<textarea id="message" class="form-control" rows="4" placeholder="Message"></textarea>
-				  </div>
-                </div>
-                <div class="col-sm-8 col-sm-offset-2 text-center">
-				  <button type="submit" class="btn btn-default btn-xl sr-button">Send message</button>
-				</div>
+                <?php include 'php/contactform.php'; ?>
             </div>
         </div>
     </section>
