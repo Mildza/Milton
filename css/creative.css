@@ -1,75 +1,3 @@
-.wrapper-tuts {
-  width: 650px;
-  margin: auto auto; }
-
-.p-header {
-  margin: 0;
-  padding: 0;
-  background-color: #bdc3c7;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px; }
-
-.blue {
-  color: blue;
-  cursor: pointer; }
-
-pre {
-  font-family: Courier New;
-  font-size: 1em;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px;
-  color: #282C34;
-  background-color: #DEDEDE;
-  padding: 10px;
-  word-break: break-all;
-  word-wrap: break-word;
-  white-space: pre;
-  white-space: -moz-pre-wrap;
-  white-space: pre-wrap;
-  white-space: pre\9; }
-
-.home-picture {
-  position: absolute;
-  top: 20px;
-  right: 20px; }
-
-.icons {
-  height: 18px;
-  vertical-align: bottom; }
-
-#font-text-show {
-  display: none; }
-
-#naming-show {
-  display: none; }
-
-#return-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  background-image: url(../img/up.png);
-  display: block;
-  text-decoration: none;
-  display: none;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  z-index: 4; }
-
-#return-to-top:hover {
-  bottom: 24px; }
-
-.footer-tuts {
-  margin-bottom: 20px; }
-
 html,
 body {
   height: 100%;
@@ -105,8 +33,7 @@ h6 {
 p {
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px;
-  letter-spacing: 0.05em; }
+  margin-bottom: 20px; }
 
 .bg-primary {
   background-color: #36499e; }
@@ -217,8 +144,7 @@ header {
     header .header-content .header-content-inner hr {
       margin: 30px auto; }
     header .header-content .header-content-inner p {
-      text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
-      font-weight: 700;
+      font-weight: 300;
       color: rgba(255, 255, 255, 0.7);
       font-size: 16px;
       margin-bottom: 50px; }
@@ -239,8 +165,6 @@ header {
           header .header-content .header-content-inner h1 {
             font-size: 50px; }
           header .header-content .header-content-inner p {
-            text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
-            font-weight: 700;
             font-size: 18px;
             max-width: 80%;
             margin-left: auto;
@@ -386,34 +310,5 @@ img::-moz-selection {
 
 body {
   webkit-tap-highlight-color: #222222; }
-
-.main {
-  width: 100%;
-  background-color: #36499e; }
-  .main img {
-    opacity: 0.7; }
-  .main img:hover {
-    opacity: 1.0; }
-
-.tools {
-  margin-bottom: 50px; }
-
-.circle {
-  width: 230px;
-  height: 230px;
-  border-radius: 50%;
-  text-align: center;
-  background: white;
-  font: 0/0 a; }
-
-.circle:before {
-  content: ' ';
-  display: inline-block;
-  vertical-align: middle;
-  height: 100%; }
-
-.circle img {
-  vertical-align: middle;
-  display: inline-block; }
 
 /*# sourceMappingURL=creative.css.map */
