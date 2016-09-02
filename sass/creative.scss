@@ -46,10 +46,12 @@ p {
     line-height: 1.5;
     margin-bottom: 20px;
     letter-spacing: 0.05em;
+    font-weight: 200;
 }
 
 .bg-primary {
     background-color: $theme-primary;
+    p{opacity: 0.7;}
 }
 
 .bg-dark {
@@ -82,9 +84,9 @@ aside {
     @include transition-all;
     .navbar-header .navbar-brand {
         color: $theme-primary;
-        @include sans-serif-font;
-        font-weight: 700;
-        text-transform: uppercase;
+        font-family: 'Merienda One', cursive;
+        font-weight: 400;
+        font-size:2.8em;
         &:hover,
         &:focus {
             color: darken($theme-primary, 10%);
@@ -95,6 +97,7 @@ aside {
         font-size: 12px;
         color: $gray-darker;
         text-transform: uppercase;
+
     }
     .nav {
         > li {
@@ -187,7 +190,7 @@ header {
                 margin: 30px auto;
             }
             p {
-				text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
+              text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
                 font-weight: 700;
                 color: rgba(white, 0.7);
                 font-size: 16px;
@@ -212,8 +215,8 @@ header {
                     font-size: 50px;
                 }
                 p {
-					text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
-					font-weight: 700;
+                    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
+          					font-weight: 700;
                     font-size: 18px;
                     max-width: 80%;
                     margin-left: auto;
@@ -232,6 +235,7 @@ header {
 
 .service-box {
     max-width: 400px;
+    height: 200px;
     margin: 50px auto 0;
     @media (min-width: 992px) {
         margin: 20px auto 0;
@@ -361,28 +365,42 @@ img::-moz-selection {
     background: transparent;
 }
 
-body {
-    webkit-tap-highlight-color: $gray-darker;
-}
+// body {
+//     webkit-tap-highlight-color: $gray-darker;
+// }
 .main {
-  width:100%;
-
   background-color: $theme-primary;
   //background-image: url(../img/binding_dark.png);
   //background-repeat: repeat;
   img {opacity: 0.7;}
   img:hover {opacity:1.0;}
+  .technologies{margin-top: 30px;}
 }
 .tools {margin-bottom: 50px;}
 
 .circle {
-    width:230px;
-    height:230px;
+    width:210px;
+    height:210px;
     border-radius:50%;
     text-align: center;
+    margin:0 auto;
     background: white;
     font: 0/0 a;
+    overflow:  hidden;
+      @media (max-width: 500px) {
+      width:150px;
+      height:150px;
+
+      }
+      img {
+        width:80%;
+        height:auto;
+        @include transition-all;
+      }
+
 }
+
+
 .circle:before {
   content: ' ';
   display: inline-block;

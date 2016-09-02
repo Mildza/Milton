@@ -143,40 +143,46 @@ p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 200;
 }
 
-/* line 50, ../sass/creative.scss */
+/* line 52, ../sass/creative.scss */
 .bg-primary {
   background-color: #36499e;
 }
-
 /* line 54, ../sass/creative.scss */
+.bg-primary p {
+  opacity: 0.7;
+}
+
+/* line 57, ../sass/creative.scss */
 .bg-dark {
   background-color: #222222;
   color: white;
 }
 
-/* line 59, ../sass/creative.scss */
+/* line 62, ../sass/creative.scss */
 .text-rgbad {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 63, ../sass/creative.scss */
+/* line 66, ../sass/creative.scss */
 section {
   padding: 100px 0;
 }
 
-/* line 67, ../sass/creative.scss */
+/* line 70, ../sass/creative.scss */
 aside {
   padding: 50px 0;
 }
 
-/* line 71, ../sass/creative.scss */
+/* line 74, ../sass/creative.scss */
 .no-padding {
   padding: 0;
 }
 
-/* line 77, ../sass/creative.scss */
+/* line 80, ../sass/creative.scss */
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
@@ -185,25 +191,25 @@ aside {
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
-/* line 82, ../sass/creative.scss */
+/* line 85, ../sass/creative.scss */
 .navbar-default .navbar-header .navbar-brand {
   color: #36499e;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-family: 'Merienda One', cursive;
+  font-weight: 400;
+  font-size: 2.8em;
 }
-/* line 87, ../sass/creative.scss */
+/* line 90, ../sass/creative.scss */
 .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
   color: #293778;
 }
-/* line 92, ../sass/creative.scss */
+/* line 95, ../sass/creative.scss */
 .navbar-default .navbar-header .navbar-toggle {
   font-weight: 700;
   font-size: 12px;
   color: #222222;
   text-transform: uppercase;
 }
-/* line 100, ../sass/creative.scss */
+/* line 104, ../sass/creative.scss */
 .navbar-default .nav > li > a,
 .navbar-default .nav > li > a:focus {
   text-transform: uppercase;
@@ -211,73 +217,73 @@ aside {
   font-size: 13px;
   color: #222222;
 }
-/* line 106, ../sass/creative.scss */
+/* line 110, ../sass/creative.scss */
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus:hover {
   color: #36499e;
 }
-/* line 111, ../sass/creative.scss */
+/* line 115, ../sass/creative.scss */
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
   color: #36499e !important;
   background-color: transparent;
 }
-/* line 115, ../sass/creative.scss */
+/* line 119, ../sass/creative.scss */
 .navbar-default .nav > li.active > a:hover,
 .navbar-default .nav > li.active > a:focus:hover {
   background-color: transparent;
 }
 @media (min-width: 768px) {
-  /* line 77, ../sass/creative.scss */
+  /* line 80, ../sass/creative.scss */
   .navbar-default {
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0.3);
   }
-  /* line 125, ../sass/creative.scss */
+  /* line 129, ../sass/creative.scss */
   .navbar-default .navbar-header .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
   }
-  /* line 127, ../sass/creative.scss */
+  /* line 131, ../sass/creative.scss */
   .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
     color: white;
   }
-  /* line 132, ../sass/creative.scss */
+  /* line 136, ../sass/creative.scss */
   .navbar-default .nav > li > a,
   .navbar-default .nav > li > a:focus {
     color: rgba(255, 255, 255, 0.7);
   }
-  /* line 135, ../sass/creative.scss */
+  /* line 139, ../sass/creative.scss */
   .navbar-default .nav > li > a:hover,
   .navbar-default .nav > li > a:focus:hover {
     color: white;
   }
-  /* line 139, ../sass/creative.scss */
+  /* line 143, ../sass/creative.scss */
   .navbar-default.affix {
     background-color: white;
     border-color: rgba(34, 34, 34, 0.05);
   }
-  /* line 142, ../sass/creative.scss */
+  /* line 146, ../sass/creative.scss */
   .navbar-default.affix .navbar-header .navbar-brand {
     color: #36499e;
     font-size: 14px;
   }
-  /* line 145, ../sass/creative.scss */
+  /* line 149, ../sass/creative.scss */
   .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand:focus {
     color: #293778;
   }
-  /* line 150, ../sass/creative.scss */
+  /* line 154, ../sass/creative.scss */
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
     color: #222222;
   }
-  /* line 153, ../sass/creative.scss */
+  /* line 157, ../sass/creative.scss */
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
     color: #36499e;
   }
 }
 
-/* line 163, ../sass/creative.scss */
+/* line 167, ../sass/creative.scss */
 header {
   position: relative;
   width: 100%;
@@ -291,14 +297,14 @@ header {
   text-align: center;
   color: white;
 }
-/* line 172, ../sass/creative.scss */
+/* line 176, ../sass/creative.scss */
 header .header-content {
   position: relative;
   text-align: center;
   padding: 100px 15px 100px;
   width: 100%;
 }
-/* line 178, ../sass/creative.scss */
+/* line 182, ../sass/creative.scss */
 header .header-content .header-content-inner h1 {
   font-weight: 700;
   text-transform: uppercase;
@@ -306,23 +312,24 @@ header .header-content .header-content-inner h1 {
   margin-bottom: 0;
   font-size: 30px;
 }
-/* line 185, ../sass/creative.scss */
+/* line 189, ../sass/creative.scss */
 header .header-content .header-content-inner hr {
   margin: 30px auto;
 }
-/* line 188, ../sass/creative.scss */
+/* line 192, ../sass/creative.scss */
 header .header-content .header-content-inner p {
-  font-weight: 300;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
+  font-weight: 700;
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   margin-bottom: 50px;
 }
 @media (min-width: 768px) {
-  /* line 163, ../sass/creative.scss */
+  /* line 167, ../sass/creative.scss */
   header {
     min-height: 100%;
   }
-  /* line 198, ../sass/creative.scss */
+  /* line 203, ../sass/creative.scss */
   header .header-content {
     position: absolute;
     top: 50%;
@@ -331,18 +338,20 @@ header .header-content .header-content-inner p {
     transform: translateY(-50%);
     padding: 0 50px;
   }
-  /* line 205, ../sass/creative.scss */
+  /* line 210, ../sass/creative.scss */
   header .header-content .header-content-inner {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 209, ../sass/creative.scss */
+  /* line 214, ../sass/creative.scss */
   header .header-content .header-content-inner h1 {
     font-size: 50px;
   }
-  /* line 212, ../sass/creative.scss */
+  /* line 217, ../sass/creative.scss */
   header .header-content .header-content-inner p {
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
+    font-weight: 700;
     font-size: 18px;
     max-width: 80%;
     margin-left: auto;
@@ -350,35 +359,36 @@ header .header-content .header-content-inner p {
   }
 }
 
-/* line 225, ../sass/creative.scss */
+/* line 232, ../sass/creative.scss */
 .section-heading {
   margin-top: 0;
 }
 
-/* line 229, ../sass/creative.scss */
+/* line 236, ../sass/creative.scss */
 .service-box {
   max-width: 400px;
+  height: 200px;
   margin: 50px auto 0;
 }
 @media (min-width: 992px) {
-  /* line 229, ../sass/creative.scss */
+  /* line 236, ../sass/creative.scss */
   .service-box {
     margin: 20px auto 0;
   }
 }
-/* line 235, ../sass/creative.scss */
+/* line 243, ../sass/creative.scss */
 .service-box p {
   margin-bottom: 0;
 }
 
-/* line 240, ../sass/creative.scss */
+/* line 248, ../sass/creative.scss */
 .portfolio-box {
   position: relative;
   display: block;
   max-width: 650px;
   margin: 0 auto;
 }
-/* line 245, ../sass/creative.scss */
+/* line 253, ../sass/creative.scss */
 .portfolio-box .portfolio-box-caption {
   color: white;
   opacity: 0;
@@ -393,7 +403,7 @@ header .header-content .header-content-inner p {
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
-/* line 256, ../sass/creative.scss */
+/* line 264, ../sass/creative.scss */
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
   width: 100%;
   text-align: center;
@@ -401,58 +411,58 @@ header .header-content .header-content-inner p {
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 262, ../sass/creative.scss */
+/* line 270, ../sass/creative.scss */
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   padding: 0 15px;
 }
-/* line 267, ../sass/creative.scss */
+/* line 275, ../sass/creative.scss */
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
 }
-/* line 272, ../sass/creative.scss */
+/* line 280, ../sass/creative.scss */
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   font-size: 18px;
 }
-/* line 278, ../sass/creative.scss */
+/* line 286, ../sass/creative.scss */
 .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
-/* line 282, ../sass/creative.scss */
+/* line 290, ../sass/creative.scss */
 .portfolio-box:focus {
   outline: none;
 }
 @media (min-width: 768px) {
-  /* line 288, ../sass/creative.scss */
+  /* line 296, ../sass/creative.scss */
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     font-size: 16px;
   }
-  /* line 291, ../sass/creative.scss */
+  /* line 299, ../sass/creative.scss */
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
 }
 
-/* line 300, ../sass/creative.scss */
+/* line 308, ../sass/creative.scss */
 .call-to-action h2 {
   margin: 0 auto 20px;
 }
 
-/* line 306, ../sass/creative.scss */
+/* line 314, ../sass/creative.scss */
 .text-primary {
   color: #36499e;
 }
 
-/* line 310, ../sass/creative.scss */
+/* line 318, ../sass/creative.scss */
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
 }
 
-/* line 316, ../sass/creative.scss */
+/* line 324, ../sass/creative.scss */
 .btn-default {
   color: #222222;
   background-color: white;
@@ -484,7 +494,7 @@ header .header-content .header-content-inner p {
   background-color: #222222;
 }
 
-/* line 320, ../sass/creative.scss */
+/* line 328, ../sass/creative.scss */
 .btn-primary {
   color: white;
   background-color: #36499e;
@@ -516,7 +526,7 @@ header .header-content .header-content-inner p {
   background-color: white;
 }
 
-/* line 324, ../sass/creative.scss */
+/* line 332, ../sass/creative.scss */
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   border: none;
@@ -525,72 +535,87 @@ header .header-content .header-content-inner p {
   text-transform: uppercase;
 }
 
-/* line 332, ../sass/creative.scss */
+/* line 340, ../sass/creative.scss */
 .btn-xl {
   padding: 15px 30px;
 }
 
-/* line 338, ../sass/creative.scss */
+/* line 346, ../sass/creative.scss */
 ::-moz-selection {
   color: white;
   text-shadow: none;
   background: #222222;
 }
 
-/* line 344, ../sass/creative.scss */
+/* line 352, ../sass/creative.scss */
 ::selection {
   color: white;
   text-shadow: none;
   background: #222222;
 }
 
-/* line 350, ../sass/creative.scss */
+/* line 358, ../sass/creative.scss */
 img::selection {
   color: white;
   background: transparent;
 }
 
-/* line 355, ../sass/creative.scss */
+/* line 363, ../sass/creative.scss */
 img::-moz-selection {
   color: white;
   background: transparent;
 }
 
-/* line 360, ../sass/creative.scss */
-body {
-  webkit-tap-highlight-color: #222222;
-}
-
-/* line 363, ../sass/creative.scss */
+/* line 371, ../sass/creative.scss */
 .main {
-  width: 100%;
   background-color: #36499e;
 }
-/* line 369, ../sass/creative.scss */
+/* line 375, ../sass/creative.scss */
 .main img {
   opacity: 0.7;
 }
-/* line 370, ../sass/creative.scss */
+/* line 376, ../sass/creative.scss */
 .main img:hover {
   opacity: 1.0;
 }
+/* line 377, ../sass/creative.scss */
+.main .technologies {
+  margin-top: 30px;
+}
 
-/* line 372, ../sass/creative.scss */
+/* line 379, ../sass/creative.scss */
 .tools {
   margin-bottom: 50px;
 }
 
-/* line 374, ../sass/creative.scss */
+/* line 381, ../sass/creative.scss */
 .circle {
-  width: 230px;
-  height: 230px;
+  width: 210px;
+  height: 210px;
   border-radius: 50%;
   text-align: center;
+  margin: 0 auto;
   background: white;
   font: 0/0 a;
+  overflow: hidden;
+}
+@media (max-width: 500px) {
+  /* line 381, ../sass/creative.scss */
+  .circle {
+    width: 150px;
+    height: 150px;
+  }
+}
+/* line 395, ../sass/creative.scss */
+.circle img {
+  width: 80%;
+  height: auto;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
 }
 
-/* line 382, ../sass/creative.scss */
+/* line 404, ../sass/creative.scss */
 .circle:before {
   content: ' ';
   display: inline-block;
@@ -598,7 +623,7 @@ body {
   height: 100%;
 }
 
-/* line 389, ../sass/creative.scss */
+/* line 411, ../sass/creative.scss */
 .circle img {
   vertical-align: middle;
   display: inline-block;
