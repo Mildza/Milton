@@ -101,7 +101,7 @@ body {
 
 /* line 12, ../sass/creative.scss */
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Libre Baskerville', 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* line 16, ../sass/creative.scss */
@@ -135,7 +135,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Gudea', 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* line 44, ../sass/creative.scss */
@@ -186,7 +186,7 @@ aside {
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Gudea', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -414,7 +414,7 @@ header .header-content .header-content-inner p {
 /* line 270, ../sass/creative.scss */
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Gudea', 'Helvetica Neue', Arial, sans-serif;
   padding: 0 15px;
 }
 /* line 275, ../sass/creative.scss */
@@ -528,7 +528,7 @@ header .header-content .header-content-inner p {
 
 /* line 332, ../sass/creative.scss */
 .btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Gudea', 'Helvetica Neue', Arial, sans-serif;
   border: none;
   border-radius: 300px;
   font-weight: 700;
@@ -592,8 +592,8 @@ img::-moz-selection {
 .circle {
   position: relative;
   border: 4px solid rgba(28, 37, 79, 0.2);
-  width: 210px;
-  height: 210px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   text-align: center;
   margin: 0 auto;
@@ -601,14 +601,21 @@ img::-moz-selection {
   font: 0/0 a;
   overflow: hidden;
 }
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   /* line 381, ../sass/creative.scss */
   .circle {
-    width: 150px;
-    height: 150px;
+    width: 190px;
+    height: 190px;
   }
 }
-/* line 397, ../sass/creative.scss */
+@media (max-width: 480px) {
+  /* line 381, ../sass/creative.scss */
+  .circle {
+    width: 130px;
+    height: 130px;
+  }
+}
+/* line 400, ../sass/creative.scss */
 .circle img {
   width: 80%;
   height: auto;
@@ -616,7 +623,7 @@ img::-moz-selection {
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
-/* line 402, ../sass/creative.scss */
+/* line 405, ../sass/creative.scss */
 .circle .description {
   text-transform: uppercase;
   position: absolute;
@@ -636,11 +643,11 @@ img::-moz-selection {
   -o-transform: translateY(-100px);
   transform: translateY(-100px);
 }
-/* line 415, ../sass/creative.scss */
+/* line 418, ../sass/creative.scss */
 .circle:hover {
   border: 4px solid rgba(28, 37, 79, 0.4);
 }
-/* line 417, ../sass/creative.scss */
+/* line 420, ../sass/creative.scss */
 .circle:hover .description {
   opacity: 0.7;
   -webkit-transform: translateY(0);
@@ -649,12 +656,12 @@ img::-moz-selection {
   -o-transform: translateY(0);
   transform: translateY(0);
 }
-/* line 418, ../sass/creative.scss */
+/* line 421, ../sass/creative.scss */
 .circle:hover img {
   opacity: 1.0;
 }
 
-/* line 423, ../sass/creative.scss */
+/* line 426, ../sass/creative.scss */
 .circle:before {
   content: ' ';
   display: inline-block;
@@ -662,18 +669,18 @@ img::-moz-selection {
   height: 100%;
 }
 
-/* line 430, ../sass/creative.scss */
+/* line 433, ../sass/creative.scss */
 .circle img {
   vertical-align: middle;
   display: inline-block;
 }
 
-/* line 435, ../sass/creative.scss */
+/* line 438, ../sass/creative.scss */
 #form-messages.success {
   color: lime;
 }
 
-/* line 436, ../sass/creative.scss */
+/* line 439, ../sass/creative.scss */
 #form-messages.error {
   color: red;
 }
