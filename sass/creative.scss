@@ -431,3 +431,6 @@ img::-moz-selection {
   vertical-align: middle;
   display: inline-block;
 }
+
+#form-messages.success{color: lime;}
+#form-messages.error{color: red;}

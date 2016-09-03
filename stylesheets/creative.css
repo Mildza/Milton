@@ -667,3 +667,13 @@ img::-moz-selection {
   vertical-align: middle;
   display: inline-block;
 }
+
+/* line 435, ../sass/creative.scss */
+#form-messages.success {
+  color: lime;
+}
+
+/* line 436, ../sass/creative.scss */
+#form-messages.error {
+  color: red;
+}
