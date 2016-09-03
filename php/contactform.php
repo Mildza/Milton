@@ -10,16 +10,16 @@ if (!isset($_POST['submit'])){
   } else {
     if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false) {
         $to      = 'info@milton-soft.com';
-        $subject = 'Kontakt forma - ' . $_POST['subject'];
+        $subject = 'Kontakt forma - ' . htmlspecialchars ($_POST['subject']);
         $email = $_POST['email'];
-         $ip_address = $_SERVER['REMOTE_ADDR'];
+        $ip_address = $_SERVER['REMOTE_ADDR'];
         $headers = "From: $email\r\n";
         $headers .= "Reply-To: $email\r\n";
         $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/html; charset=utf-8\r\n";
         $message = '<html><head><style>body { font-family: Verdana; font-size: 12px; }</style></head><body>';
         $message .= "New mail from:<br><br>Email: $email <br>IP: $ip_address <br><br>Message:<br>";
-        $message .= $_POST['message'] . '</body></html>';
+        $message .= htmlspecialchars ($_POST['message']) . '</body></html>';
 
         $sendMail = mail($to, $subject, $message, $headers);
         if($sendMail) {

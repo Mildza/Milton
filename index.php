@@ -154,47 +154,71 @@
 
         <div class="row row-centered technologies">
             <div class="col-xs-6 col-md-3 col-centered tools" >
+              <a href="#">
                 <div class="circle sr-icons">
-                <a href="tutorials/html-css.html"><img  class="img-responsive center-block" src="img/html-css.png" alt="html-css"></a>
+                <img  class="img-responsive center-block" src="img/html-css.png" alt="html-css">
+                <div class="description"><h5>HTML5 | CSS3</h5></div>
                 </div>
+              </a>
             </div>
             <div class="col-xs-6 col-md-3 col-centered tools">
+              <a href="#">
                 <div class="circle sr-icons">
-                    <a href="tutorials/sass.html"><img class="img-responsive center-block"  src="img/sass.png" alt="Sass" title="Sass" ></a>
-                </div>
+                    <img class="img-responsive center-block"  src="img/sass.png" alt="Sass" title="Sass" >
+                    <div class="description"><h5>CSS<br />post-processor</h5></div>
+                    </div>
+                  </a>
             </div>
 
           <div class="col-xs-6 col-md-3 col-centered tools">
+            <a href="#">
             <div class="circle sr-icons">
-              <a href="tutorials/compass.html"><img class="img-responsive center-block img-size"  src="img/compas.png" alt="Compass" title="Compass"></a>
-            </div>
+              <img class="img-responsive center-block img-size"  src="img/compas.png" alt="Compass" title="Compass">
+              <div class="description"><h5>Compass | Susy</h5></div>
+              </div>
+            </a>
          </div>
           <div class="col-xs-6 col-md-3 col-centered tools">
+            <a href="#">
             <div class="circle sr-icons">
               <img class="img-responsive center-block"  src="img/bootstrap.png" alt="Bootstrap" title="Bootstrap">
-            </div>
+              <div class="description"><h5>Bootstrap</h5></div>
+              </div>
+            </a>
           </div>
         </div>
        <div class="row">
           <div class="col-xs-6 col-md-3 col-centered tools">
+            <a href="#">
               <div class="circle sr-icons">
                   <img class="img-responsive center-block" src="img/javascript.png" alt="JavaScript">
-            </div>
+                  <div class="description"><h5>JS | JQUERY</h5></div>
+                  </div>
+                </a>
          </div>
           <div class="col-xs-6 col-md-3 col-centered tools">
+            <a href="#">
               <div class="circle sr-icons">
-                  <a href="#"><img  class="img-responsive center-block" src="img/wordpress.png" alt="Wordpress" title="Wordpress"></a>
-            </div>
+                <img  class="img-responsive center-block" src="img/wordpress.png" alt="Wordpress" title="Wordpress">
+                  <div class="description"><h5>Wordpress</h5></div>
+                  </div>
+                </a>
          </div>
           <div class="col-xs-6 col-md-3 col-centered tools">
+            <a href="#">
               <div class="circle sr-icons">
-                  <a href="#"><img class="img-responsive center-block"  src="img/drupal-8.png" alt="Drupal 8" title="Drupal 8"></a>
-            </div>
+                  <img class="img-responsive center-block"  src="img/drupal-8.png" alt="Drupal 8" title="Drupal 8">
+                  <div class="description"><h5>Drupal 8</h5></div>
+                  </div>
+                </a>
          </div>
           <div class="col-xs-6 col-md-3 col-centered tools">
+            <a href="#">
               <div class="circle sr-icons">
                   <img class="img-responsive center-block"  src="img/php_mysql.png" alt="PHP, MySQL" title="PHP, MySQL">
-              </div>
+                  <div class="description"><h5>PHP | MySQL</h5></div>
+                  </div>
+                </a>
          </div>
     </div>
       <div class="row row-centered technologies">

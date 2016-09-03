@@ -74,3 +74,11 @@
 @mixin serif-font() {
 	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
+
+@mixin transform( $val ) {
+    -webkit-transform: $val;
+    -moz-transform: $val;
+    -ms-transform: $val;
+    -o-transform: $val;
+    transform: $val;
+}
