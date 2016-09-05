@@ -91,7 +91,8 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">We'll do what you need!</h2>
                     <hr class="light">
-                    <p class="text-faded">We are two web developers with experience in creating web presentations, and their implementation in the existing CMS solutions or php framevorks. We are most focused on Front-end tasks but also have experience in php. You can get everything you need to get your new website up and running in short time! </p>
+                    <p class="text-faded">We are two web developers with experience in creating web presentations, 
+usually templates and their implementation in the existing CMS solutions or php frameworks. We are most focused on Front-end tasks but also have experience in php. You can get everything you need to get your new website up and running in short time!</p>
                     <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Find Out More</a>
                 </div>
             </div>
