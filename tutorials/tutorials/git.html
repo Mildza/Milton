@@ -1,0 +1,118 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <title>Document</title>
+
+
+  <style>
+  p {margin:0; padding:0; text-align: justify;}
+  </style>
+<script src="../js/highlighter.js"></script>
+
+</head>
+<body>
+  <div class="wrapper-tuts">
+  <a href="top:" id="return-to-top"></a>
+  <a class="home-picture" href="../index.html"><img src="../images/home.png" alt="Home"></a>
+  <div ></div>
+<h1>GIT commands</h1>
+
+<h3>Git config</h3>
+<pre>git config --list</pre>
+<p>Config username and email</p>
+<pre>git config --global user.name "Milan Vukovic"
+git config --global user.email "mildzan@gmail.com"
+</pre>
+
+<h3>Creating Repository</h3>
+<p>Navigate to your directory</p>
+<pre>git init</pre>
+
+<h3>Adding folders or files to repo</h3>
+<p>Adding to stage</p>
+<pre>git add .</pre>
+<p>Adding to repo</p>
+<pre>git commit -m "some mesagge"</pre>
+<p>View commits</p>
+<pre>git log</pre>
+<p>View specific Author</p>
+<pre>git log --author="Milan"</pre>
+<p>View status</p>
+<pre>git status</pre>
+<p>View differents between files</p>
+<pre>git diff
+git diff --staged
+</pre>
+
+<h3>Deleting files</h3>
+<pre>git rm file.name
+git commit -m "deleting file"</pre>
+<p>We can later go to this point of time and roll back file</p>
+
+<h3>Move and rename files</h3>
+<pre>git mv old.name new.name
+git mv old.name newfolder/new.name
+git commit -m "renamed files"</pre>
+
+<h3>Not accepting changes to a file</h3>
+<p>To see which file is modified</p>
+<pre>git status
+git checkout -- file.name</pre>
+<p>Get back file from a stageing areas</p>
+<pre>git reset HEAD file.name</pre>
+
+<h3>Gettin old version from the repo</h3>
+<p>First get log to see commits</p>
+<pre>git log</pre>
+<p>Then use command checkout and couple letters from commit</p>
+<pre>git checkout 01e7... -- file.name
+git commit -am "Rollback"</pre>
+
+<h3>Adding files directly to repo, skipping stage area</h3>
+<pre>git commit -am "Adding any changes drectly but also deleting files"</pre>
+
+<h3>Adding new repo remotely</h3>
+<p class="italic">First create repo on github</p>
+<pre>git remote add (repo name) (remote url)
+git remote add exampleGithub https://github.com/Mildza/links
+git remote - check repo</pre>
+
+<h3>Adding files remotely</h3>
+<pre>git push -u (repo name) master</pre>
+
+<h3>Fetching files from remote repo</h3>
+<pre>git pull (repo name)
+git fetch (repo name)</pre>
+
+<h3>Branches</h3>
+<p>To see all branches</p>
+<pre>git branch -a</pre>
+<p>Check local branch</p>
+<pre>git branch</pre>
+<p>Switch beetwen branches</p>
+<pre>git checkout BranchName</pre>
+<p>Make new branch</p>
+<pre>git checkout -b newbranch</pre>
+<p>Commit to new branch</p>
+<pre>git commit -am "new feature to newbranch"</pre>
+<p>Crete new branch remotely</p>
+<pre>git push origin newbranch</pre>
+<p>Merge branch</p>
+<pre>git merge newbranch</pre>
+<p>Delete local branch</p>
+<pre>git branch -d newbranch</pre>
+<p>Delete remote branch</p>
+<pre>git push origin :newbranch</pre>
+<br>
+<div class="footer-tuts">
+| <a href="http://gitref.org/" target="_blank">Reference</a>
+| <a href="https://www.youtube.com/watch?v=cEGIFZDyszA&list=PL6gx4Cwl9DGAKWClAD_iKpNC0bGHxGhcx" target="_blank"><img class="icons" src="../images/youtube.png" alt="youtube" /></a> |
+</div>
+</div>
+</body>
+<script src="../js/scroll.js"></script>
+</html>

@@ -1,0 +1,129 @@
+//@import 'compass';
+@import 'reset';
+@import 'functions';
+@import 'fonts';
+@import 'tutorials';
+
+
+ p {font-size: px2em(16)}
+/*
+header {
+  width:60%;
+  height: 100px;
+  background-color: #3498db;
+  margin: auto;
+  @include border-radius(0px 0px 10px 10px);
+  h1 {margin-top:0;
+    padding-top: 25px;
+    color:white;
+    text-align: center;
+    }
+}
+*/
+/*
+#banner{
+
+	height: 222px;
+	margin: 0px auto;
+	background-color: #282C34;
+	background-image: url(../images/psd.png), url(../images/wordpress.png), url(../images/binding_dark.png);
+	background-position: 0px 40px, 31% 40px;
+	background-repeat: no-repeat, no-repeat, repeat;
+	animation: animate-background linear 9s infinite;
+
+}
+@keyframes animate-background {
+	from { background-position: 0px 40px, 31% 40px, 120% 120%;  }
+	to { background-position: 50% 40px, 110% 40px, 0px 0px; }
+}
+
+#banner img {
+  margin: 0px 0px 0px 28%;
+}
+*/
+.frontend {
+    width:50%;
+    margin: 10px auto;
+        h1 {text-align: center;font-size: px2em(60);font-weight: 400;}
+        p {font-size: px2em(18);text-align: justify;}
+}
+
+.main {
+  width:100%;
+  margin-top: 90px;
+  img {opacity: 0.7;}
+  img:hover {opacity:1.0;}
+}
+
+.tools {margin-bottom: 40px;}
+
+.bookmarks {padding:5px;}
+
+.picture {width:18px; height:18px;margin-right: 5px;}
+
+.footer {
+  color:white;
+  font-weight: 300;
+      h2{font-size:1.3em;}
+      a:link, a:visited, a:hover, a:active  {
+        color: white;font-size: 0.8em;
+      }
+}
+
+.footer-icons {
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'FontAwesome';
+  font-size: 4em;
+  color:white;
+  margin: -20px 0px;
+  a:link, a:visited, a:hover, a:active  {
+    color: white;
+  }
+}
+
+.bookmarks {margin: 0px;
+padding: 0px;}
+/*
+@media(max-width:1336px){
+  #banner {
+    text-align: center;
+    img {
+      margin:0;
+    }
+}
+
+  @keyframes animate-background {
+  	from { background-position: -300px -300px, -300px -300px;  }
+  	to { background-position: -300px -300px, -300px -300px; }
+}
+}
+*/
+@media(max-width:991px){
+  header {width:100%;}
+  .frontend {width:80%;}
+  .wrapper-tuts {width:60%;}
+  pre {width:98%; padding: 5px;}
+
+}
+
+@media(max-width:767px){
+    //#banner {display: none;}
+    header {width:100%;}
+    .margin {margin-top: 5px;}
+    .wrapper {
+    width:95%;
+    padding-left: 5px;
+      h2{font-size:1.2em;}
+  }
+  .main {width:80%;}
+
+  .wrapper-tuts {width:94%; padding: 5px 10px;}
+  pre {width:98%; padding: 5px;}
+  .frontend {width:95%;
+        h1 {font-size: 2.5em;}
+      p {;font-size: 1.1em;}
+  }
+  .home-picture {top: 10px; right: 1px;}
+  #return-to-top {bottom: 10px; right: 1px;}
+}

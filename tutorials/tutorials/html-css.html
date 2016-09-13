@@ -1,0 +1,63 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <title>Document</title>
+
+
+  <style>
+  html {padding:30px;width:700px;margin:auto auto;}
+  p {margin:0; padding:0;}
+  p:before {margin:20px;}
+  </style>
+<script src="../js/highlighter.js"></script>
+  <script>
+  function show (id) {
+  var elem = document.getElementById(id);
+  elem.style.display = ((elem.style.display!='block') ? 'block' : 'none');
+  }
+  </script>
+
+</head>
+<body>
+  <div class="wrapper-tuts">
+  <a href="top:" id="return-to-top"></a>
+  <a class="home-picture" href="../index.html"><img src="../images/home.png" alt="Home"></a>
+  <div ></div>
+<h1>HTML & CSS DOUBTS</h1>
+
+<h4 class="blue" onclick="show('font-text-show')" >Font Size: px, em or rem?</h4>
+<div id="font-text-show">
+<p>PX - relative to the viewing device</p>
+<p>EM - Relative to the font-size of the element (2em means 2 times the size of the current font)</p>
+<p>REM - Relative to font-size of the root element</p>
+<p>The best way is to use REM in main div and EM in sub divs</p>
+<pre>
+$default-font-size: 16;
+
+@function px2em($size-in-px, $base-size:$default-font-size) {
+@return ($size-in-px/$base-size) + em;
+}
+@function px2rem($size-in-px) {
+@return ($size-in-px/$default-font-size) + rem;
+</pre>
+<p class="p-header">.scss</p>
+<pre>
+p {font-size: px2em(16);}
+</pre>
+<p class="p-header">.css</p>
+<pre>
+p {font-size: 1em; }
+</pre>
+</div>
+<h4 class="blue" onclick="show('naming-show')">Naming Convention In CSS</h4>
+<div id="naming-show">
+  Naming class's and functions must be well described using dash "-" separator to easy associate.
+
+</div>
+</body>
+<script src="../js/scroll.js"></script>
+</html>

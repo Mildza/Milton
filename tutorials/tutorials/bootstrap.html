@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <!--[if IE]>
+    <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <title>Bootstrap|Tips</title>
+
+    <style media="screen">
+
+    p {margin:0; padding:0; text-align: justify;}
+
+
+
+    </style>
+    <script src="../js/highlighter.js"></script>
+    </head>
+
+
+  <body>
+    <div class="wrapper-tuts">
+    <a href="top:" id="return-to-top"></a>
+    <a class="home-picture" href="../index.html"><img src="../images/home.png" alt="Home"></a>
+    <h1>BOOTSTRAP tips</h1>
+    <p>To start use Boostrap must add CDN link in header and .js library at the booton of the body tag.</p>
+    <h3>Bootstrap defaults</h3>
+    <p>font-size is 14px and line-height is 1.428 applied to body and paragraphs</p>
+    <h3>Emphasis</h3>
+    <p>Class lead will give larger font size, lighter weight and a taller line height.</p>
+<pre>&lt;p class="lead"&gt; ... &lt;/p&gt;</pre>
+    <p>Small tag set text at 85% the size of the parent</p>
+    <pre>&lt;small>some text&lt;/small&gt;</pre>
+    <p>Strong tag is rendered as bold text</p>
+    <pre>&lt;strong>some text&lt;/strong&gt;</pre>
+    <p>Em tag is rendered as italic text</p>
+    <pre>&lt;em>some text&lt;/em></pre>
+    <p>U tag is rendered as underline text</p>
+    <pre>&lt;u>some text&lt;/u&gt;</pre>
+    <h3>Alignment class</h3>
+    <p>Align text to left</p>
+    <pre>class="text-left"</pre>
+    <p>Align text to center</p>
+    <pre>class="text-center"</pre>
+    <p>Align text to right</p>
+    <pre>class="text-right"</pre>
+    <h3>Transformation Classes</h3>
+    <p>Lowercased text</p>
+    <pre>&lt;p class="text-lowercase">Some Text&lt;/p&gt;</pre>
+    <p>Uppercased text</p>
+    <pre>&lt;p class="text-uppercase">Some Text&lt;/p&gt;</pre>
+    <p>Capitalized text, first letter of the word</p>
+    <pre>&lt;p class="text-capitalize">Some Text&lt;/p&gt;</pre>
+
+    <h3>Media Queries</h3>
+    <p>Extra small devices (xs - less than 768px)</p>
+    <pre>No media query, since this is the default in Bootstrap</pre>
+    <p>Small devices (sm - 768px and up)</p>
+    <pre>@media (min-width: @screen-sm-min)
+{...}</pre>
+    <p>Medium devices (md - 992px and up)</p>
+    <pre>@media (min-width: @screen-md-min)
+{...}</pre>
+    <p>Large devices (lg -1200px and up)</p>
+    <pre>@media (min-width: @screen-lg-min)
+{...}</pre>
+    <h3>Class .visible-xs-*</h3>
+    <p>Visible at xs but hidden at sm, md and lg</p>
+    <h3>Class .hidden-xs-*</h3>
+    <p>Hidden at xs but visible at sm, md and lg</p>
+    <h3>Floats</h3>
+    <p>Float left or rgiht</p>
+    <pre>&lt;div class="pull-left"&gt;...&lt;/div&gt;</pre>
+    <pre>&lt;div class="pull-right"&gt;...&lt;/div&gt;</pre>
+    <h3>Center Content Blocks</h3>
+    <p>Set an element to display:block and center via margin</p>
+    <pre>&lt;div class="center-block"&gt;...&lt;/div&gt;</pre>
+    <h3>Clearifx</h3>
+    <pre>&lt;div class="clearfix"&gt;...&lt;/div&gt;</pre>
+    <h3>Showing and Hiding Content</h3>
+    <pre>&lt;div class="show"&gt;...&lt;/div&gt;</pre>
+    <pre>&lt;div class="hidden"&gt;...&lt;/div&gt;</pre>
+    <h3>Image Replacement</h3>
+    <p>Replace an element's text contetn with a backgound image</p>
+    <pre>&lt;h1 class="text-hide"&gt;Heading&lt;h1&gt;</pre>
+    <h3>Screen Reader</h3>
+    <p>Hide an element to all devices except screen readers</p>
+    <pre>&lt;a class="sr-only" href="#"&gt;some text&lt;/a&gt;</pre>
+
+    <h3>FORMS</h3>
+    <p>All textual input, texarea and select with class .form-control have 100% width.</p>
+    <p>Bootstrap provides 3 types od form layouts: Vertical form(default), Horizontal form, Inline form</p>
+    <p>Standard Form roules</p>
+    <pre>&lt;form role="form"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;input class="form-control" ...&gt;
+</pre>
+    <h3>Supported Form Controls</h3>
+    <p>Bootstrap supports the following form controls: input, textarea, checkbox, radio and select</p>
+    <p>Most common form control types are:text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel and color.</p>
+    <p>Inputs will be only fully styled if their type is properly declared.</p>
+    <pre>&lt;input type"text" class="form-control" placeholder="Text Input"&gt;</pre>
+
+
+
+
+<br>
+    <div class="footer-tuts">
+    | <a href="http://getbootstrap.com/css/">Reference</a> |
+    | <a href="https://www.youtube.com/playlist?list=PL45DD77A4CCA76ED3" target="_blank"><img class="icons" src="../images/youtube.png" alt="youtube" /></a> |
+  </div>
+
+</div>
+  </body>
+  <script src="../js/scroll.js"></script>
+</html>

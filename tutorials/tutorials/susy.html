@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <title>SASS</title>
+
+    <style media="screen">
+
+    p {margin:0; padding:0; text-align: justify;}
+
+
+    </style>
+<script src="../js/highlighter.js"></script>
+    </head>
+
+
+  <body>
+    <div class="wrapper-tuts">
+    <a href="top:" id="return-to-top"></a>
+    <a class="home-picture" href="../index.html"><img src="../images/home.png" alt="Home"></a>
+  <h1>SUSY</h1>
+  <h3>Install Susy</h3>
+  <pre>
+  gem install susy</pre>
+  <p>make config.rb file</p>
+  <pre>
+  require "susy"
+
+  project_type = :stand_alone
+  http_path = "/"
+  sass_dir = "sass"
+  css_dir = "stylesheets"
+  images_dir = "img"
+  fonts_dir = "fonts"
+  javascripts_dir = "js"
+  line_comments = false
+  preferred_syntax = :scss
+  output_style = :expanded
+  relative_assets = true</pre>
+  <p>Import susy at the begining of .scss file</p>
+  <pre>
+  @import "susy";</pre>
+  <p>Make fluid container in .scss</p><pre>
+  body {
+  @include container(80%);
+  }</pre>
+  <p>Make column that will be half size of content</p>
+  <pre>
+  main{
+    @include span(6 of 12);
+  }</pre>
+  <p>The same will be</p>
+  <pre>
+  main{
+    @include span(8 of 16);
+  }</pre>
+    <p>Making 2 columns</p>
+  <pre>
+  main{
+    @include span(8 of 12);
+  }
+  asside{
+    @include span(4 at 9 of 12);
+  }</pre>
+  <p>Maps:key->value pair</p>
+  <pre>
+  $susy: (
+      columns: 12,
+      gutters: 1/4,
+      math: fluid,
+      output: float,
+      gutter-position: inside,
+  );
+  </pre>
+  <p>Layout</p>
+  <pre>
+  $widelayout: (
+      columns: 24,
+      gutters: 1/4,
+      math: fluid,
+      output: float,
+      gutter-position: inside,
+  );
+
+  @include layout($widelayout);</pre>
+  <p>Layout shorthand</p>
+  <pre>
+  @include layout(24 1/4 fluid float inside);
+  );
+  or
+  main{
+    @include span(8 at 0 of 24 1/8);
+  }
+  asside{
+    @include span(4 at 9);
+  }</pre>
+  <p>Breakpoint install</p>
+  <pre>
+  gem install breakpoint</pre>
+  <p>In config.rb add requirements</p><pre>
+  require "susy"
+  require "breakpoint"</pre>
+  <p>Import susy at the begining of .scss file</p>
+  <pre>
+  @import "susy";
+  @import "breakpoint";</pre>
+  <p>Use breakpoint, mobile first</p>
+  <pre>
+  @include breakpoint(500px){
+    main{
+      @include span(8 of 12);
+    }
+    asside{
+      @include span(4 at 9 of 12);
+    }
+  }</pre>
+  <p>Use 3 columns inside main column</p>
+  <pre>
+  @include breakpoint(1200px){
+    @include layout(24);
+    main{
+      @include span(21);
+      .col1, .col2, .col3 {
+        @include span(4 of 12)
+      }
+    }
+    asside{
+      @include span(3);
+    }
+  }</pre>
+  <p>Use variables and mixins</p>
+  <pre>
+  $small:500px;
+  @include susy-breakpoint($small,24){
+    main{
+      @include span(21);
+      .col1, .col2, .col3 {
+        @include span(4 of 12)
+      }
+    }
+    asside{
+      @include span(3);
+    }
+  }</pre>
+<br>
+    <div class="footer-tuts">
+    | <a href="http://susy.oddbird.net/" target="_blank">Basic</a>
+    | <a href="https://www.youtube.com/watch?v=KYpqPZCzbwA" target="_blank"><img class="icons" src="../images/youtube.png" alt="youtube" /></a> |
+  </div>
+
+</div>
+  </body>
+  <script src="../js/scroll.js"></script>
+</html>
