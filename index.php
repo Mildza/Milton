@@ -31,7 +31,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="stylesheets/creative.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,49 +44,51 @@
 
 <body id="page-top">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Milton<span class="hidden-xs">-Soft</span></a>
-            </div>
+	<div class="parallax">
+		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+					</button>
+					<a class="navbar-brand page-scroll" href="#page-top">Milton<span class="hidden-xs">-Soft</span></a>
+				</div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#tehnologies">Technologies</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a class="page-scroll" href="#about">About</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#services">Services</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#tehnologies">Technologies</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 id="homeHeading">Be unique</h1>
-                <hr>
-                <p>Milton-Soft can help you in building better websites! Just contact us, and be unique on the web!</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Continue</a>
-            </div>
-        </div>
-    </header>
-
+		<header>
+			<div class="header-content">
+				<div class="header-content-inner">
+					<h1 id="homeHeading">Be unique</h1>
+					<hr>
+					<p>Milton-Soft can help you in building better websites! Just contact us, and be unique on the web!</p>
+					<a href="#about" class="btn btn-primary btn-xl page-scroll">Continue</a>
+				</div>
+			</div>
+		</header>
+	</div>
+	
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
@@ -156,7 +158,7 @@
 
         <div class="row row-centered technologies">
             <div class="col-xs-6 col-md-3 col-centered tools" >
-              <a href="#">
+              <a href="http://www.w3schools.com/html/html5_intro.asp" target="_blank">
                 <div class="circle sr-icons">
                 <img  class="img-responsive center-block" src="img/html-css.png" alt="html-css">
                 <div class="description"><h5>HTML5 | CSS3</h5></div>
@@ -164,16 +166,16 @@
               </a>
             </div>
             <div class="col-xs-6 col-md-3 col-centered tools">
-              <a href="#">
+              <a href="http://sass-lang.com/" target="_blank">
                 <div class="circle sr-icons">
                     <img class="img-responsive center-block"  src="img/sass.png" alt="Sass" title="Sass" >
-                    <div class="description"><h5>CSS<br />post-processor</h5></div>
+                    <div class="description"><h5>SASS<br />post-processor</h5></div>
                     </div>
                   </a>
             </div>
 
           <div class="col-xs-6 col-md-3 col-centered tools">
-            <a href="#">
+            <a href="http://compass-style.org/" target="_blank">
             <div class="circle sr-icons">
               <img class="img-responsive center-block img-size"  src="img/compas.png" alt="Compass" title="Compass">
               <div class="description"><h5>Compass | Susy</h5></div>
@@ -181,7 +183,7 @@
             </a>
          </div>
           <div class="col-xs-6 col-md-3 col-centered tools">
-            <a href="#">
+            <a href="http://getbootstrap.com/" target="_blank">
             <div class="circle sr-icons">
               <img class="img-responsive center-block"  src="img/bootstrap.png" alt="Bootstrap" title="Bootstrap">
               <div class="description"><h5>Bootstrap</h5></div>
@@ -191,7 +193,7 @@
         </div>
        <div class="row">
           <div class="col-xs-6 col-md-3 col-centered tools">
-            <a href="#">
+            <a href="https://jquery.com/" target="_blank">
               <div class="circle sr-icons">
                   <img class="img-responsive center-block" src="img/javascript.png" alt="JavaScript">
                   <div class="description"><h5>JS | JQUERY</h5></div>
@@ -199,7 +201,7 @@
                 </a>
          </div>
           <div class="col-xs-6 col-md-3 col-centered tools">
-            <a href="#">
+            <a href="https://wordpress.org/" target="_blank">
               <div class="circle sr-icons">
                 <img  class="img-responsive center-block" src="img/wordpress.png" alt="Wordpress" title="Wordpress">
                   <div class="description"><h5>Wordpress</h5></div>
@@ -207,7 +209,7 @@
                 </a>
          </div>
           <div class="col-xs-6 col-md-3 col-centered tools">
-            <a href="#">
+            <a href="https://www.drupal.org/" target="_blank">
               <div class="circle sr-icons">
                   <img class="img-responsive center-block"  src="img/drupal-8.png" alt="Drupal 8" title="Drupal 8">
                   <div class="description"><h5>Drupal 8</h5></div>
@@ -215,7 +217,7 @@
                 </a>
          </div>
           <div class="col-xs-6 col-md-3 col-centered tools">
-            <a href="#">
+            <a href="https://secure.php.net/" target="_blank">
               <div class="circle sr-icons">
                   <img class="img-responsive center-block"  src="img/php_mysql.png" alt="PHP, MySQL" title="PHP, MySQL">
                   <div class="description"><h5>PHP | MySQL</h5></div>
