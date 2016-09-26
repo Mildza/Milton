@@ -16,6 +16,8 @@
     <meta name="author" content="">
 
     <title>Milton Software</title>
+	
+	<link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -77,9 +79,9 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Be different</h1>
+                <h1 id="homeHeading">Be unique</h1>
                 <hr>
-                <p>We can help you to build better website! Just contact us, and be unique on the web!</p>
+                <p>Milton-Soft can help you in building better websites! Just contact us, and be unique on the web!</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Continue</a>
             </div>
         </div>
@@ -89,10 +91,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We'll do what you need!</h2>
+                    <h2 class="section-heading">Who are we?</h2>
                     <hr class="light">
-                    <p class="text-faded">We are two web developers with experience in creating web presentations, 
-usually templates and their implementation in the existing CMS solutions or php frameworks. We are most focused on Front-end tasks but also have experience in php. You can get everything you need to get your new website up and running in short time!</p>
+                    <p class="text-faded">We are two web developers from Serbia (Europe), with experience in creating web presentations and templates and their implementation in the existing CMS solutions or PHP frameworks. Our work is most focused on Front-end tasks, but we also have a lot experience in PHP back-end development. You can get everything you need to get your new website up and running in short time! </p>
                     <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Find Out More</a>
                 </div>
             </div>
@@ -121,14 +122,14 @@ usually templates and their implementation in the existing CMS solutions or php 
                     <div class="service-box">
                         <i class="fa fa-4x fa-tablet text-primary sr-icons"></i>
                         <h3>Responsive design</h3>
-                        <p class="text-muted">We create templates to be viewed in response to the size of the device one is viewing with.</p>
+                        <p class="text-muted">Templates are created to be viewed in response to the size of the device one is viewing with.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-clone text-primary sr-icons"></i>
                         <h3>Modern frameworks</h3>
-                        <p class="text-muted">In our work trying to use modern frameworks such as Bootstrap, Foundation etc.</p>
+                        <p class="text-muted">Modern frameworks such as Bootstrap, Foundation etc. are used in our work. </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -146,9 +147,9 @@ usually templates and their implementation in the existing CMS solutions or php 
       <div class="container ">
          <div class="row">
 			      <div class="col-lg-8 col-lg-offset-2 text-center">
-                  <h2 class="section-heading">What we know!</h2>
+                  <h2 class="section-heading">Our knowledge!</h2>
                   <hr class="primary">
-                  <p>The work We provide is of highest quality, fully responsive, and tested in a wide range of devices. We take great care to ensure each project is well-documented and easily maintainable so you can enhance a website as your company grows.</p>
+                  <p>Milton-soft will provide you work of highest quality, fully responsive, and tested in a wide range of devices. We take great care to ensure each project is well-documented and easily maintainable so you can enhance a website as your company grows.</p>
                   <hr class="light">
              </div>
            </div>
