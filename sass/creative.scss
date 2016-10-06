@@ -61,7 +61,13 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+	
+	&-section{
+		height: 100%;
+	}
 }
+
+
 
 .bg-primary {
     background-color: $theme-primary;
@@ -78,7 +84,8 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 100px 0;	
+    background-color: white;
 }
 
 aside {
